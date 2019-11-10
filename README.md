@@ -60,7 +60,7 @@ client.login(secret.token) // bot token
 
 #### Run your bot
 
-Locate your msg.js dile and type the following command in your terminal:
+Locate your msg.js file and type the following command in your terminal:
 
 ```bash
 node msg.js
