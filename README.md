@@ -6,9 +6,29 @@ This program is used for a bot in Discord that is linked to a single channel on 
 
 This app will make use of [node.js](nodejs.org) and [discord.js](discord.js.org).
 
-Once you have node.js downloaded, you can run the following on your terminal:
+Once you have node.js downloaded, go to a preferred directory run the following on your terminal:
 
+```bash
+npm init
 ```
+
+It will prompt you for a few things, you can input whatever you wish or simply hit enter/return.
+
+```bash
+package name: (test) dog_bot
+version: (1.0.0)
+description:
+entry point: (index.js) msg.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC) MIT
+```
+
+After you confirm everything, download discord.js:
+
+```bash
 npm install discord.js
 ```
 #### Create your bot on discord
@@ -36,4 +56,12 @@ var generalChannel = client.channels.get(secret.channel) //goes to the right cha
 
 ```JavaScript
 client.login(secret.token) // bot token
+```
+
+#### Run your bot
+
+Locate your msg.js dile and type the following command in your terminal:
+
+```bash
+node msg.js
 ```
