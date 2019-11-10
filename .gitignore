@@ -1,0 +1,9 @@
+node_modules/
+
+package-lock.json
+
+secrets.js
+
+my_bot.js
+
+*~
