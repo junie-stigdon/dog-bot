@@ -29,11 +29,11 @@ npm install discord.js
 
 - In msg.js, anywhere it says *secret.channel* enter your "Channel ID" in quotation marks
 
-``` 
-    var generalChannel = client.channels.get(secret.channel) //goes to the right channel
+```JavaScript 
+var generalChannel = client.channels.get(secret.channel) //goes to the right channel
 ```
 - In msg.js, where it says *secret.token* enter your "Secret Token" in quotation marks
 
-```
+```JavaScript
 client.login(secret.token) // bot token
 ```
