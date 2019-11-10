@@ -6,7 +6,7 @@ This program is used for a bot in Discord that is linked to a single channel on 
 
 This app will make use of [node.js](nodejs.org) and [discord.js](discord.js.org).
 
-Once you have node.js downloaded, go to a preferred directory run the following on your terminal:
+Once you have node.js downloaded, go to a preferred directory and run the following on your terminal:
 
 ```bash
 npm init
