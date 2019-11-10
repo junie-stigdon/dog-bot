@@ -46,7 +46,7 @@ function goodboyCommand(arguments, receivedMessage) {
     
     var generalChannel = client.channels.get(secret.channel) //goes to the right channel
     
-    const webAttachment = new Discord.Attachment('https://media.discordapp.net/attachments/525331896582930432/541101294941634560/image0.jpg') // picture of darth doggo
+    const webAttachment = new Discord.Attachment('https://i.imgur.com/vl5XzCo.jpg') // picture of darth doggo
     generalChannel.send(webAttachment)
 }
 
