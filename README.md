@@ -2,6 +2,8 @@
 
 This program is used for a bot in Discord that is linked to a single channel on a server. It will listen for specific inputs from users and respond by posting images of a dog saying something silly. 
 
+---
+
 #### Installation
 
 This app will make use of [node.js](nodejs.org) and [discord.js](discord.js.org).
@@ -11,6 +13,8 @@ Once you have node.js installed, locate where you downloaded this repo and run t
 ```bash
 npm install
 ```
+
+---
 
 #### Create your bot on discord
 
@@ -28,6 +32,8 @@ npm install
   - Right-click the channel's name on the left navigation bar
   - Select "Copy ID"
 
+---
+
 #### Create secrets.js
 
 You will need to create a file in your directory labeled "secrets.js":
@@ -44,6 +50,8 @@ module.exports = {
     channel: "INPUT CHANNEL ID HERE"
 }
 ```
+
+---
 
 #### Run your bot
 
