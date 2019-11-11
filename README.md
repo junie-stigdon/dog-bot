@@ -2,35 +2,16 @@
 
 This program is used for a bot in Discord that is linked to a single channel on a server. It will listen for specific inputs from users and respond by posting images of a dog saying something silly. 
 
-#### Install discord.js
+#### Installation
 
 This app will make use of [node.js](nodejs.org) and [discord.js](discord.js.org).
 
-Once you have node.js downloaded, go to a preferred directory and run the following on your terminal:
+Once you have node.js installed, locate where you downloaded this repo and run the following on your terminal:
 
 ```bash
-npm init
+npm install
 ```
 
-It will prompt you for a few things, you can input whatever you wish or simply hit enter/return.
-
-```bash
-package name: (test) dog_bot
-version: (1.0.0)
-description:
-entry point: (index.js) msg.js
-test command:
-git repository:
-keywords:
-author:
-license: (ISC) MIT
-```
-
-After you confirm everything, download discord.js:
-
-```bash
-npm install discord.js
-```
 #### Create your bot on discord
 
 - Create a bot application and then invite it to a server of your choice
@@ -47,15 +28,21 @@ npm install discord.js
   - Right-click the channel's name on the left navigation bar
   - Select "Copy ID"
 
-- In msg.js, anywhere it says *secret.channel* enter your "Channel ID" in quotation marks
+#### Create secrets.js
 
-```JavaScript 
-var generalChannel = client.channels.get(secret.channel) //goes to the right channel
+You will need to create a file in your directory labeled "secrets.js":
+
+```bash
+touch secrets.js
 ```
-- In msg.js, where it says *secret.token* enter your "Secret Token" in quotation marks
+
+Edit the file and type the following (input your bot's secret token and channel ID inside the quotes):
 
 ```JavaScript
-client.login(secret.token) // bot token
+module.exports = {
+    token: "INPUT SECRET TOKEN HERE",
+    channel: "INPUT CHANNEL ID HERE"
+}
 ```
 
 #### Run your bot
